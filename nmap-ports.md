@@ -28,4 +28,12 @@ what is              -PS/PA/PU/PY[portlist]: TCP SYN/ACK, UDP or SCTP discovery 
 custom nmap-services file
 --servicedb *servicesfile*   // this uses -F fast scan
 
+```nmap-services
+qotd         17/tcp    0.002346  # Quote of the Day
+qotd         17/udp    0.009209  # Quote of the Day
+msp          18/udp    0.000610  # Message Send Protocol
+chargen      19/tcp    0.002559  # ttytst source Character Generator
+chargen      19/udp    0.015865  # ttytst source Character Generator
+```
+
 
