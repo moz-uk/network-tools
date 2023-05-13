@@ -40,4 +40,20 @@ chargen      19/tcp    0.002559  # ttytst source Character Generator
 chargen      19/udp    0.015865  # ttytst source Character Generator
 ```
 
+```work-application-services
+main-app  33966/tcp 0 # main app
+mail      33969/tcp 0 # mail
+33962     33962/tcp 0 #33962
+```
 
+
+-iL *list-of-ips/hosts-to-scan
+
+```nmap-work-application-servers
+192.168.1.93
+192.168.1.87
+```
+
+```
+nmap --servicedb "nmap-work-application-services" 192.168.1.93 -Pn -iL nmap-work-application-servers
+```
